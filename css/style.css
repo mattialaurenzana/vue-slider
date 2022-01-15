@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color:lightslategray;
+    background-color:rgb(155, 164, 173);
 }
 
 .container{
@@ -20,18 +20,17 @@ body{
 .img-container{
     width: 600px;
     height: 400px;
-
 }
 
 .img-container img{
     object-fit: cover;
     width: 100%;
     height: 100%;
-    box-shadow:  
+    /* box-shadow:  
      20px  20px 5px #dedede,
     -20px -20px 5px #dedede,
      20px -20px 5px #dedede,
-    -20px  20px 5px #dedede;
+    -20px  20px 5px #dedede; */
 
     border-radius: 20px;
 }
@@ -44,4 +43,30 @@ i{
 
 i:hover{
     cursor: pointer;
+}
+
+.small-circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(163, 148, 148);
+    z-index: 1;
+    margin: 3px;
+}
+
+.circles-container{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+}
+
+.active{
+    background-color: white;
+}
+
+.disable{
+    background-color: rgb(163, 148, 148);
 }

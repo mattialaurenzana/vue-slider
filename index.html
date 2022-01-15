@@ -18,6 +18,10 @@
             <i class="fas fa-arrow-alt-circle-left" @click="prevPhoto"></i>  
             <div class="img-container">
                 <img :src="images[currentIndex]" alt="">
+                <div class="circles-container">
+                    <div class="small-circle" :class="[currentIndex === index ? 'active' : 'disable']" v-for="(img,index) in images"></div>
+            
+                </div>
             </div>
             <i class="fas fa-arrow-alt-circle-right" @click="nextPhoto"></i>
         </div>
