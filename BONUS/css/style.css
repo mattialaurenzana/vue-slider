@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(206, 220, 233);
+}
+
+header{
+    height: 100px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+    font-family: fantasy;
+    color: white;
+    text-shadow: 5px 5px black;
+    
+}
+
+header h1{
+    height: 100%;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+}
+
+.img-container{
+    width: 600px;
+    height: 400px;
+}
+
+.img-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow:  
+     20px  20px 5px white,
+    -20px -20px 5px white,
+     20px -20px 5px white,
+    -20px  20px 5px white;
+
+    border-radius: 20px;
+}
+
+i{
+    font-size: 60px;
+    color: white;
+    margin: 0 20px;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+.small-circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(163, 148, 148);
+    z-index: 1;
+    margin: 3px;
+}
+
+.circles-container{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2;
+}
+
+.active{
+    background-color: white;
+}
+
+.disable{
+    background-color: rgb(163, 148, 148);
+}
+
+.modal{
+    position: absolute;
+    bottom: 0;
+    width: 600px;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.pause{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    z-index: 3;
+}
